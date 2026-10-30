@@ -1,0 +1,279 @@
+/**
+ * SION MUSIC ACADEMY - RESPONSIVE STYLES
+ * Mobile (320-767px), Tablet (768-1023px), Desktop (1024px+)
+ */
+
+/* ==========================================================================
+   Desktop (>= 1024px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .header-nav-zone {
+    display: flex;
+  }
+
+  .header-action-zone {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+
+  .mobile-drawer {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   Tablet & Mobile (< 1024px)
+   Converts Header to Clean Hamburger to Guarantee Zero Multi-Line Squeezing
+   ========================================================================== */
+@media (max-width: 1023px) {
+  .header-nav-zone {
+    display: none;
+  }
+
+  .header-action-zone {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  /* Mobile Navigation Drawer */
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(300px, 80vw);
+    background: #FFFFFF;
+    border-left: 1px solid var(--border-subtle);
+    padding: 5.5rem 1.75rem 2.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 205;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform var(--transition-normal), opacity var(--transition-normal), visibility var(--transition-normal);
+    box-shadow: -15px 0 40px rgba(24, 24, 24, 0.1);
+    display: flex;
+  }
+
+  .mobile-drawer:not(.is-open) {
+    display: none !important;
+  }
+
+  .mobile-drawer.is-open {
+    display: flex !important;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobile-drawer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    width: 100%;
+  }
+
+  .mobile-menu-link {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: var(--fw-medium);
+    color: var(--text-primary);
+    text-decoration: none;
+    width: 100%;
+    padding-block: 0.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .mobile-drawer-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  /* Hero */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-trust-bar {
+    justify-content: center;
+  }
+
+  .hero-floating-card {
+    left: 0.5rem;
+    bottom: -1rem;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .about-image-secondary {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 85%;
+    margin-top: -2.5rem;
+    margin-left: auto;
+  }
+
+  /* Steps */
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Footer */
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* ==========================================================================
+   Mobile (< 768px)
+   ========================================================================== */
+@media (max-width: 767px) {
+  .site-header {
+    height: 72px;
+  }
+
+  .header-logo-img {
+    height: 42px;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding-top: calc(72px + 1.5rem);
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.65rem, 6.5vw, 2.15rem);
+  }
+
+  .hero-trust-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-floating-card {
+    position: relative;
+    inset: auto;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  /* Courses */
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item.col-span-7,
+  .gallery-item.col-span-5,
+  .gallery-item.col-span-6 {
+    grid-column: span 1;
+  }
+
+  .gallery-thumb-wrap {
+    min-height: 230px;
+  }
+
+  /* Steps */
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Highlights */
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Floating Actions */
+  .floating-actions {
+    bottom: 1.25rem;
+    right: 1rem;
+    gap: 0.5rem;
+  }
+
+  .float-btn {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .float-btn svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+/* ==========================================================================
+   Small Mobile (< 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .course-card {
+    padding: 1.5rem;
+  }
+
+  .btn-lg {
+    padding: 0.8125rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}

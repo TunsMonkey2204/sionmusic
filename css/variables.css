@@ -1,0 +1,98 @@
+/**
+ * SION MUSIC ACADEMY - DESIGN TOKENS
+ * Warm Editorial Minimalist × Premium Music Academy
+ * Palette built from official logo cream (#FFF3C1) & deep black (#181818)
+ */
+
+:root {
+  /* Color Palette - Warm, Elegant, High-End */
+  --bg-primary: #FFFFFF;
+  --bg-cream: #FFF9E7;          /* Soft Warm Cream */
+  --bg-cream-gold: #FFF3C1;     /* Logo Original Cream Base */
+  --bg-surface: #FAF8F2;        /* Editorial Off-White Surface */
+  --bg-surface-alt: #F5F2E9;    /* Muted Warm Cream */
+  --bg-card: #FFFFFF;
+
+  /* Borders & Dividers */
+  --border-subtle: #EAE5D8;     /* Warm Ivory Border */
+  --border-medium: #DCD6C7;     /* Medium Warm Line */
+  --border-dark: #181818;       /* Deep Accent Border */
+
+  /* Typography Colors */
+  --text-primary: #181818;      /* Deep Rich Charcoal / Black */
+  --text-secondary: #66645F;    /* Warm Muted Slate Body */
+  --text-muted: #8C887F;        /* Light Editorial Grey */
+  --text-inverted: #FFFFFF;
+
+  /* Brand Accents */
+  --accent-gold: #D9AC55;       /* Warm Instrumental Gold */
+  --accent-gold-dark: #B8860B;  /* Deep Gold */
+  --accent-gold-hover: #C59B46;
+  --accent-gold-light: #FFF2BF;
+
+  /* Interactive Buttons */
+  --btn-dark-bg: #181818;
+  --btn-dark-text: #FFFFFF;
+  --btn-dark-hover: #333333;
+  --btn-gold-bg: #D9AC55;
+  --btn-gold-text: #181818;
+  --btn-gold-hover: #C59B46;
+
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Weights */
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* Spacing Scale */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+
+  /* Container */
+  --container-max: 1240px;
+  --container-narrow: 980px;
+  --container-wide: 1320px;
+  --container-pad: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* Border Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;            /* Standard CTA button radius: 12-16px */
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* Shadows - Soft, Warm, Natural */
+  --shadow-xs: 0 1px 3px rgba(24, 24, 24, 0.04);
+  --shadow-sm: 0 4px 12px rgba(24, 24, 24, 0.04);
+  --shadow-md: 0 10px 25px -4px rgba(24, 24, 24, 0.06), 0 4px 10px -2px rgba(24, 24, 24, 0.02);
+  --shadow-lg: 0 20px 40px -8px rgba(24, 24, 24, 0.08);
+  --shadow-xl: 0 30px 60px -12px rgba(24, 24, 24, 0.12);
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-normal: 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-slow: 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Z-Index Hierarchy */
+  --z-base: 1;
+  --z-card: 2;
+  --z-sticky: 100;
+  --z-header: 200;
+  --z-float-actions: 250;
+  --z-modal: 350;
+  --z-toast: 400;
+}
